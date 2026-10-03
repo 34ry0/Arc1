@@ -1,14 +1,14 @@
 const { SlashCommandBuilder, PermissionFlagsBits, ChannelType, AttachmentBuilder, EmbedBuilder } = require('discord.js');
 const store = require('../store');
 const { pool, tx } = require('../db');
-const { UserError } = require('../utils/errors');
-const { SLOTS, slotLabel, rosterEmbed } = require('../utils/format');
-const { parseColor } = require('../utils/colors');
-const { requireAdmin } = require('../utils/permissions');
-const { recordTransaction } = require('../utils/transactions');
-const { handleAutocomplete } = require('../utils/autocomplete');
-const roles = require('../utils/roles');
-const captains = require('../utils/captains');
+const { UserError } = require('../Utils/errors');
+const { SLOTS, slotLabel, rosterEmbed } = require('../Utils/format');
+const { parseColor } = require('../Utils/colors');
+const { requireAdmin } = require('../Utils/permissions');
+const { recordTransaction } = require('../Utils/transactions');
+const { handleAutocomplete } = require('../Utils/autocomplete');
+const roles = require('../Utils/roles');
+const captains = require('../Utils/captains');
 
 const NAME_PATTERN = /^[A-Za-z0-9][A-Za-z0-9 ._~-]{1,23}$/;
 const MAX_BACKUP_BYTES = 5 * 1024 * 1024;

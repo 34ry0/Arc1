@@ -2,9 +2,9 @@ const { Client, GatewayIntentBits, Events, MessageFlags, REST, Routes } = requir
 const { pool, connectWithRetry, migrate } = require('./db');
 const store = require('./store');
 const commands = require('./commands');
-const { UserError } = require('./utils/errors');
-const { recordTransaction } = require('./utils/transactions');
-const { slotLabel } = require('./utils/format');
+const { UserError } = require('./Utils/errors');
+const { recordTransaction } = require('./Utils/transactions');
+const { slotLabel } = require('./Utils/format');
 
 for (const key of ['DISCORD_TOKEN', 'CLIENT_ID', 'DATABASE_URL']) {
   if (!process.env[key]) {

@@ -1,13 +1,13 @@
 const { SlashCommandBuilder } = require('discord.js');
 const store = require('../store');
 const { tx } = require('../db');
-const { UserError } = require('../utils/errors');
-const { slotLabel } = require('../utils/format');
-const { resolveActingClan } = require('../utils/permissions');
-const { recordTransaction } = require('../utils/transactions');
-const { handleAutocomplete } = require('../utils/autocomplete');
-const roles = require('../utils/roles');
-const captains = require('../utils/captains');
+const { UserError } = require('../Utils/errors');
+const { slotLabel } = require('../Utils/format');
+const { resolveActingClan } = require('../Utils/permissions');
+const { recordTransaction } = require('../Utils/transactions');
+const { handleAutocomplete } = require('../Utils/autocomplete');
+const roles = require('../Utils/roles');
+const captains = require('../Utils/captains');
 
 const data = new SlashCommandBuilder()
   .setName('clan')
