@@ -1,6 +1,6 @@
 const { SlashCommandBuilder } = require('discord.js');
 const store = require('../store');
-const { clanListEmbeds } = require('../utils/format');
+const { clanListEmbeds } = require('../Utils/format');
 
 module.exports = {
   data: new SlashCommandBuilder().setName('clans').setDescription('List every clan and its roster'),

@@ -1,9 +1,9 @@
 const { SlashCommandBuilder, EmbedBuilder } = require('discord.js');
 const store = require('../store');
 const { tx } = require('../db');
-const { UserError } = require('../utils/errors');
-const { resolveActingClan } = require('../utils/permissions');
-const { handleAutocomplete } = require('../utils/autocomplete');
+const { UserError } = require('../Utils/errors');
+const { resolveActingClan } = require('../Utils/permissions');
+const { handleAutocomplete } = require('../Utils/autocomplete');
 
 const GREY = 0x808080;
 

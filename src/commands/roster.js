@@ -1,12 +1,12 @@
 const { SlashCommandBuilder } = require('discord.js');
 const store = require('../store');
 const { tx } = require('../db');
-const { UserError } = require('../utils/errors');
-const { SLOTS, slotLabel, rosterEmbed } = require('../utils/format');
-const { resolveActingClan } = require('../utils/permissions');
-const { recordTransaction } = require('../utils/transactions');
-const { handleAutocomplete } = require('../utils/autocomplete');
-const roles = require('../utils/roles');
+const { UserError } = require('../Utils/errors');
+const { SLOTS, slotLabel, rosterEmbed } = require('../Utils/format');
+const { resolveActingClan } = require('../Utils/permissions');
+const { recordTransaction } = require('../Utils/transactions');
+const { handleAutocomplete } = require('../Utils/autocomplete');
+const roles = require('../Utils/roles');
 
 const SLOT_CHOICES = [
   { name: 'Starter 1', value: '1' },
